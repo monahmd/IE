@@ -1,0 +1,86 @@
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .image2 {
+    position: absolute;
+    top: 100px;
+    left: 610px;
+    width: 120px;
+    height: 126px;
+  }
+h1 {
+    position: absolute;
+    left: 740px;
+    top: 60px;
+    color: #4F4F4F;
+    font-size: 64px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 33px;
+    left: 745px;
+    top: 140px;
+    color: #4F4F4F;
+    font-weight: 100;
+}
+.large {
+    position: absolute;
+    font-size: 115px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EB5757;
+    left: 580px;
+    top: 350px;
+}
+.small {
+    position: absolute;
+    left: 560px;
+    top: 320px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 39px;
+    color: #4F4F4F;
+    font-weight: 300;
+}
+#p1 {
+    position: absolute;
+    font-size: 17px;
+    color: #4F4F4F;
+    line-height: 20px;
+    left: 580px;
+    top: 475px;
+}
+.req {
+    position: absolute;
+    left: 580px;
+    top: 590px;
+    width: 160px;
+    height: 50px;
+    background-color: #F2C94C;
+    border-radius: 30px;
+}
+#p2 {
+    position: absolute;
+    font-size: 17px;
+    color: #333333;
+    left: 50px;
+    bottom: -1px;
+}
+#p3 {
+    position: absolute;
+    font-size: 17px;
+    color: #EB5757;
+    left: 800px;
+    top: 590px;
+}
