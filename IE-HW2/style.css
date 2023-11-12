@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FFCF96, #F6FDC3);
+    padding: 10px;
+}
+
+.toDoList {
+    width: 100%;
+    max-width: 540px;
+    background: #F6FDC3;
+    margin: 35px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.ti {
+    display: flex;
+    flex-direction: row;
+}
+
+.toDoList h1 {
+    color: #FF8080;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#todo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    max-width: 75px;
+    max-height: 75px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.in-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+#add-btn {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #FFD89C;
+    color: #FF8080;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li del {
+    position: absolute;
+    text-decoration: none;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: gray;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li del:hover {
+    background: #FF8080;
+}
+
+.search {
+    width: 30%;
+    max-width: 300px;
+    height: 30%;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F6FDC3;
+    border-radius: 50px;
+    padding-left: 20px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+#search-button {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #F6FDC3;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+#searchic {
+    width: 80%;
+}
+
+#search-button:hover {
+    background: #CDFAD5;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    max-height: 120px;
+}
+
+.tsk {
+    width: 30%;
+    max-width: 100px;
+    height: 30%;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffc796;
+    border-radius: 50px;
+    padding-left: 20px;
+    margin-left: 35%;
+    margin-top: 0%;
+}
+
+h2 {
+    color: #FF8080;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+#task-num {
+    color: grey;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.cmp {
+    width: 30%;
+    max-width: 150px;
+    height: 31%;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffc796;
+    border-radius: 50px;
+    padding-left: 20px;
+    margin-left: 2%;
+    margin-top: 0%;
+}
+
+h3 {
+    color: #FF8080;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+#cmp-num {
+    color: grey;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.rem {
+    width: 30%;
+    max-width: 150px;
+    height: 31%;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffc796;
+    border-radius: 50px;
+    padding-left: 20px;
+    margin-left: 2%;
+    margin-top: 0%;
+}
+
+h4 {
+    color: #FF8080;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+#rem-num {
+    color: grey;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
